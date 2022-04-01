@@ -1,3 +1,4 @@
+#!/bin/sh
 mkdir -p /tmp/kolor/
 COLORHEX=$(echo $1 | pastel format hex 2>/dev/null) 
 [ $? -eq 1 ] && exit 1

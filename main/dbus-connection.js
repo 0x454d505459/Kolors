@@ -3,11 +3,11 @@ const dbus = require('dbus-native');
 const sessionBus = dbus.sessionBus();
 if (!sessionBus) throw new Error('Could not connect to session bus');
 
-sessionBus.requestName('net.kolors2', 0x04, (err, code) => {
+sessionBus.requestName('com.github.belka-kolors', 0x04, (err, code) => {
     if (err) throw new Error(err);
 
     if (code === 3) throw new Error(`Another instance is already running`);
-    if (code !== 1) throw new Error(`Received code ${code} while requesting service name "net.kolors2"`);
+    if (code !== 1) throw new Error(`Received code ${code} while requesting service name "com.github.belka-kolors"`);
 });
 
 // Interface definition from https://github.com/KDE/krunner/blob/master/src/data/org.kde.krunner1.xml

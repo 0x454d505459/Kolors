@@ -1,3 +1,4 @@
+#!/bin/sh
 while IFS= read -r color && [ "$color" ]; do
 echo "$color"
 done <<< $(echo "$(echo "$1" | pastel format hex)"
