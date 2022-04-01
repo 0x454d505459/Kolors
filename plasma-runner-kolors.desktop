@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Kolors
+Comment=Kolors KRunner plugin
+X-KDE-ServiceTypes=Plasma/Runner
+Type=Service
+Icon=preferences-color
+X-KDE-PluginInfo-Author=Belka
+X-KDE-PluginInfo-Name=Kolors
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-License=GPL-3.0
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=DBus
+X-Plasma-DBusRunner-Service=com.github.belka-kolors
+X-Plasma-DBusRunner-Path=/krunnerZoom

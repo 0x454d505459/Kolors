@@ -1,0 +1,5 @@
+[General]
+Name=Krunner DBus JavaScript
+Comment=Krunner plugin to manipulate colors.
+Category=Plasma/KRunner
+Icon=planetkde

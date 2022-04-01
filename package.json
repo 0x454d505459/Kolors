@@ -1,0 +1,16 @@
+{
+    "name": "kolors",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main/index.js",
+    "scripts": {
+        "start": "node main/index.js",
+        "bundle-dependencies": "mkdir -p bin;makeself --tar-extra \"--exclude=*.md --exclude=package-lock.json --exclude=.vscode --exclude=.idea --exclude=bin --exclude=dist --exclude=*.desktop --exclude-vcs\" . kolors.run kolors node src/index.js; mv kolors.run bin/",
+        "bundle-standalone": "pkg src/index.js --target=node12-linux-x64 --output ./bin/kolors-standalone.run"
+    },
+    "author": "Belka",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "dbus-native": "^0.4.0"
+    }
+}
