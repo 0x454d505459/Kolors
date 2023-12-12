@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Kolors
-Comment=Kolors KRunner plugin
+Comment=Color manipulation
 X-KDE-ServiceTypes=Plasma/Runner
 Type=Service
 Icon=preferences-color
